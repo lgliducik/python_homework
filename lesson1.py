@@ -41,6 +41,22 @@ else:
 # 385916 -> yes
 # 123456 -> no
 
+ticket_number = input("введите номер билета(6-ти значный):")
+
+if ticket_number.isdigit() and len(ticket_number) == 6:
+    part1 = 0
+    for i in ticket_number[0:int(len(ticket_number)/2)]:
+        part1 += int(i)
+    part2 = 0
+    for i in ticket_number[int(len(ticket_number) / 2):]:
+        part2 += int(i)
+    if part1 == part2:
+        print("yes")
+    else:
+        print("no")
+else:
+    print("число не 6-ти значное")
+
 # Задача 8: Требуется определить, можно ли от шоколадки размером n × m долек отломить k долек,
 # если разрешается сделать один разлом по прямой между дольками (то есть разломить шоколадку на два прямоугольника).
 # *Пример:*
