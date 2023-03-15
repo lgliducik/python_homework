@@ -63,3 +63,18 @@ else:
 # 3 2 4 -> yes
 # 3 2 1 -> no
 
+m = input("введите m:")
+n = input("введите n:")
+k = input("сколько долек хотим отломить:")
+
+if m.isdigit() and n.isdigit() and k.isdigit():
+    m = int(m)
+    n = int(n)
+    k = int(k)
+
+    if k % n == 0 or k % m == 0:
+        print("yes")
+    else:
+        print("no")
+else:
+    print("ввели не числа")
