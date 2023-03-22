@@ -89,10 +89,10 @@ english_alphabet3 = {k: 4 for k in 'FHVWY'}
 english_alphabet.update(english_alphabet3)
 english_alphabet4 = {k: 5 for k in 'K'}
 english_alphabet.update(english_alphabet4)
-english_alphabet4 = {k: 8 for k in 'JX'}
-english_alphabet.update(english_alphabet4)
-english_alphabet5 = {k: 10 for k in 'QZ'}
+english_alphabet5 = {k: 8 for k in 'JX'}
 english_alphabet.update(english_alphabet5)
+english_alphabet6 = {k: 10 for k in 'QZ'}
+english_alphabet.update(english_alphabet6)
 
 russian_alphabet = {}
 russian_alphabet = {k: 1 for k in 'АВЕИНОРСТ'}
@@ -104,10 +104,10 @@ russian_alphabet3 = {k: 4 for k in 'ЙЫ'}
 russian_alphabet.update(russian_alphabet3)
 russian_alphabet4 = {k: 5 for k in 'ЖЗХЦЧ'}
 russian_alphabet.update(russian_alphabet4)
-russian_alphabet4 = {k: 8 for k in 'ШЭЮ'}
-russian_alphabet.update(russian_alphabet4)
-russian_alphabet5 = {k: 10 for k in 'ФЩЪ'}
+russian_alphabet5 = {k: 8 for k in 'ШЭЮ'}
 russian_alphabet.update(russian_alphabet5)
+russian_alphabet6 = {k: 10 for k in 'ФЩЪ'}
+russian_alphabet.update(russian_alphabet6)
 
 word = input("Введите слово:").upper()
 price = 0
