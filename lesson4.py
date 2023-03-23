@@ -40,8 +40,6 @@ for _ in range(M):
     l.append(int(input("Введите элемент массива:")))
 print(l)
 
-index = 0
-
 count_list = list()
 for i in range(len(l)-1):
     count_list.append(l[i - 1] + l[i] + l[i + 1])
