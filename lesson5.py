@@ -1,4 +1,4 @@
-# Дана строка ( возможно, пустая), состоящая из букв A-Z
+# 6. Дана строка ( возможно, пустая), состоящая из букв A-Z
 # AAAABBBCCXYZDDDDEEEFFFAAAAAABBBBBBBBBBBBBBBBBBBBBBBBBBBB
 # Нужно написать функцию RLE, которая на выходе даст строку вида: A4B3C2XYZD4E3F3A6B28
 # И сгенерирует ошибку, если на вход пришла невалидная строка.
@@ -6,7 +6,7 @@
 # Если символ повторяется более 1 раза, к нему добавляется количество повторений.
 
 
-# Sample Input
+# 3. Sample Input
 # ["eat", "tea", "tan", "ate", "nat", “bat"]
 # Sample Output
 # [ ["ate", "eat", "tea"], ["nat", "tan"], ["bat"] ]
@@ -45,13 +45,13 @@ input_list = ["eat", "tea", "tan", "ate", "nat", "bat"]
 
 
 def group_word(input_l):
-    temp = frozenset(input_l[0])
-    temp_dict = {temp: [input_l[0]]}
+    temp_dict = {frozenset(input_l[0]): [input_l[0]]}
     for i in range(1, len(input_l)):
-        if frozenset(input_l[i]) in temp_dict.keys():
-            temp_dict[frozenset(input_l[i])].append(input_l[i])
+        key = frozenset(input_l[i])
+        if key in temp_dict.keys():
+            temp_dict[key].append(input_l[i])
         else:
-            temp_dict[frozenset(input_l[i])] = [input_l[i]]
+            temp_dict[key] = [input_l[i]]
     return list(temp_dict.values())
 
 
