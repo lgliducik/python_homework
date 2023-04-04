@@ -57,7 +57,7 @@ print(is_rithm(input_str))
 print(is_rithm(input_str2))
 
 
-def print_operation_table(operation, num_rows=6, num_columns=6):
+def print_operation_table(operation: callable, num_rows: int = 6, num_columns: int = 6) -> list:
     rez = []
     line = []
     for column in range(1, num_columns + 1):
